@@ -5,3 +5,11 @@ html {
 .bg-purple{
     background-color: rgb(160, 37, 160);
 }
+
+.fs-45{
+    font-size: 45pt;
+}
+
+.fs-18{
+    font-size: 18pt;
+}
