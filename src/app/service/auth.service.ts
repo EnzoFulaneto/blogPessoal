@@ -14,13 +14,26 @@ export class AuthService {
     private http: HttpClient
   ) { }
 
+  /*LINK ANDERSON 
   entrar (userLogin: UserLogin): Observable<UserLogin> {
-    return this.http.post<UserLogin>('https://generationfulanetoblogpessoal.herokuapp.com/usuarios/logar', userLogin)
+    return this.http.post<UserLogin>('https://backendblogpessoal.herokuapp.com/usuarios/logar', userLogin)
   }
 
   cadastrar(usuario: Usuario): Observable<Usuario> {
-    return this.http.post<Usuario>('https://generationfulanetoblogpessoal.herokuapp.com/usuarios/cadastrar', usuario)
+    return this.http.post<Usuario>('https://backendblogpessoal.herokuapp.com/usuarios/cadastrar', usuario)
   }
+*/
+
+/*MEU LINK*/
+entrar (userLogin: UserLogin): Observable<UserLogin> {
+  return this.http.post<UserLogin>('https://generationfulanetoblogpessoal.herokuapp.com/usuarios/logar', userLogin)
+}
+
+cadastrar(usuario: Usuario): Observable<Usuario> {
+  return this.http.post<Usuario>('https://generationfulanetoblogpessoal.herokuapp.com/usuarios/cadastrar', usuario)
+}
+
+
 
   logado() {
     let ok = false

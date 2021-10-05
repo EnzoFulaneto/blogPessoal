@@ -2,10 +2,10 @@ import { Tema } from "./Tema"
 import { Usuario } from "./Usuario"
 
 export class Postagem{
-    private id: number
-	private titulo: string
-	private texto: string
-	private data: Date
-	private tema: Tema
-	private usuario: Usuario
+    public id: number
+	public titulo: string
+	public texto: string
+	public data: Date
+	public tema: Tema
+	public usuario: Usuario
 }
