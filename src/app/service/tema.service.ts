@@ -15,6 +15,7 @@ export class TemaService {
     headers: new HttpHeaders().set('Authorization', environment.token)
   } 
 
+  /*Meu link
   getAllTema(): Observable<Tema[]>{
     return this.http.get<Tema[]>('https://generationfulanetoblogpessoal.herokuapp.com/tema', this.token)
   }
@@ -33,5 +34,51 @@ export class TemaService {
 
   deleteTema(id: number){
     return this.http.delete<Tema> (`https://generationfulanetoblogpessoal.herokuapp.com/tema/${id}`, this.token)
+  }
+}
+*/
+
+
+/*Link do Anderson
+getAllTema(): Observable<Tema[]>{
+  return this.http.get<Tema[]>('https://backendblogpessoal.herokuapp.com/tema', this.token)
+}
+
+getByIdTema(id: number): Observable<Tema>{
+  return this.http.get<Tema>(`https://backendblogpessoal.herokuapp.com/tema/${id}`, this.token)
+}
+
+postTema(tema: Tema): Observable<Tema>{
+  return this.http.post<Tema>('https://backendblogpessoal.herokuapp.com/tema', tema, this.token)
+}
+
+putTema(tema: Tema): Observable<Tema>{
+  return this.http.put<Tema>('https://backendblogpessoal.herokuapp.com/tema', tema, this.token)
+}
+
+deleteTema(id: number){
+  return this.http.delete<Tema> (`https://backendblogpessoal.herokuapp.com/tema/${id}`, this.token)
+}
+}
+*/
+
+  getAllTema(): Observable<Tema[]>{
+    return this.http.get<Tema[]>('http://localhost:8080/tema', this.token)
+  }
+
+  getByIdTema(id: number): Observable<Tema>{
+    return this.http.get<Tema>(`http://localhost:8080/tema/${id}`, this.token)
+  }
+
+  postTema(tema: Tema): Observable<Tema>{
+    return this.http.post<Tema>('http://localhost:8080/tema', tema, this.token)
+  }
+
+  putTema(tema: Tema): Observable<Tema>{
+    return this.http.put<Tema>('http://localhost:8080/tema', tema, this.token)
+  }
+
+  deleteTema(id: number){
+    return this.http.delete<Tema> (`http://localhost:8080/tema/${id}`, this.token)
   }
 }
