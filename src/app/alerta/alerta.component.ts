@@ -10,7 +10,7 @@ import { BsModalRef } from 'ngx-bootstrap/modal';
 export class AlertaComponent implements OnInit {
 
   @Input() message: string
-  @Input() tipo = 'success'
+  @Input() type = 'success'
 
   constructor(
     public modal: BsModalRef
