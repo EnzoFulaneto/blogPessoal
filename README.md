@@ -1,3 +1,7 @@
+# Documentação
+The documentation of this project can be accessed at https://enzofulaneto.github.io/doc-blogPessoal/ 
+A documentação desse projeto pode ser acessada em https://enzofulaneto.github.io/doc-blogPessoal/
+
 # BlogPessoal
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7.
