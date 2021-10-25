@@ -47,7 +47,7 @@ export class UserEditComponent implements OnInit {
     this.usuario.tipo = this.tipoUsuario
 
     if(this.usuario.senha != this.confirmarSenha){
-      alert('As senhas não são compátiveis')
+      this.alertas.showAlertInfo('As senhas não são compátiveis')
     } else {
       this.authService.cadastrar(this.usuario).subscribe((resp: Usuario) => {
         this.usuario = resp
