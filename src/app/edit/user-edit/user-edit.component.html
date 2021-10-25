@@ -24,12 +24,12 @@
 
             <div class="form-group">
                 <label for="senha">Senha</label>
-                <input type="password" class="form-control" name="senha" id="senha"
-                placeholder="Insira uma senha segura" (input)='confirmSenha($event)'>
+                <input (input)='confirmSenha($event)' type="password" class="form-control" name="senha" id="senha"
+                placeholder="Insira uma senha segura">
             </div>
 
             <div class="form-group">
-                <label for="confirmaSenha">Confirme sua senha</label>
+                <label for="confirmSenha">Confirme sua senha</label>
                 <input [(ngModel)]='usuario.senha' type="password" class="form-control" name="confirmaSenha" 
                 id="confirmaSenha"
                 placeholder="Confirme sua senha">

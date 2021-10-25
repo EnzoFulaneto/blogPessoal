@@ -54,7 +54,8 @@ cadastrar(usuario: Usuario): Observable<Usuario> {
 getByIdUser(id: number): Observable<Usuario>{
   return this.http.get<Usuario>(`http://localhost:8080/usuarios/${id}`)
 }
-  
+
+
   logado() {
     let ok = false
 
@@ -64,4 +65,14 @@ getByIdUser(id: number): Observable<Usuario>{
 
     return ok
   }
+
+  adm(){
+    let ok = false
+
+    if (environment.tipo != 'adm'){
+      ok = true
+    }
+
+    return ok
+    }
 }
